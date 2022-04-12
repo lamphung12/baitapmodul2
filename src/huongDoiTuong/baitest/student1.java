@@ -1,4 +1,4 @@
-package huongDoiTuong;
+package huongDoiTuong.baitest;
 
 public class student1 {
 

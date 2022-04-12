@@ -1,6 +1,4 @@
-package huongDoiTuong;
-
-import java.util.Scanner;
+package huongDoiTuong.baitest;
 
 public class fanTo {
     final int SLOW =1;

@@ -1,5 +1,5 @@
-package huongDoiTuong;
-import java.util.Scanner;
+package huongDoiTuong.baitest;
+
 public class demoOOP {
     String mieuTa= "mat hang nay rat dep";
     double giaGoc=100;

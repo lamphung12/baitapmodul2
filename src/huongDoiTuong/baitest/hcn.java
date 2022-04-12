@@ -1,4 +1,4 @@
-package huongDoiTuong;
+package huongDoiTuong.baitest;
 
 import java.util.Scanner;
 

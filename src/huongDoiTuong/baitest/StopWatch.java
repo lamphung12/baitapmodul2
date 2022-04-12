@@ -1,6 +1,4 @@
-package huongDoiTuong;
-
-import java.util.Scanner;
+package huongDoiTuong.baitest;
 
 public class StopWatch {
     private long  startTime;
