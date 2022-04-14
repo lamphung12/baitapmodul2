@@ -4,17 +4,17 @@ public class Triangle extends Shape {
     private double side1 =1 ;
     private double side2 =1 ;
     private double side3 =1 ;
-    private double h;
+
 
 
     public Triangle() {
     }
 
-    public Triangle(double side1, double side2, double side3,double  h) {
+    public Triangle(double side1, double side2, double side3) {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
-        this.h=h;
+
     }
 
     public double getSide1() {
@@ -41,16 +41,10 @@ public class Triangle extends Shape {
         this.side3 = side3;
     }
 
-    public double getH() {
-        return h;
-    }
-
-    public void setH(double h) {
-        this.h = h;
-    }
 
     public double getArea(){
-        return  (side1*h)/2;
+     double s1 = getPerimeter()/2;
+        return Math.sqrt(s1*(s1-side1)*(s1-side2)*(s1-side3));
     }
     public double getPerimeter(){
         return side1 + side2 + side3;
@@ -60,17 +54,16 @@ public class Triangle extends Shape {
     public String toString() {
         return "Triangle{" +
                 "color='" + color + '\'' +
-                ", filled=" + filled +
                 ", side1=" + side1 +
                 ", side2=" + side2 +
                 ", side3=" + side3 +
-                ", h=" + h +"Dien tich Tam giac: "+getArea()+
+               "Dien tich Tam giac: "+getArea()+
                 "Chu vi tam giac"+ getPerimeter()+
                 '}';
     }
 
     public static void main(String[] args) {
-        Triangle t =new Triangle(3,5,6,2.4);
+        Triangle t =new Triangle(5,7.2,8);
         System.out.println(t.toString());
     }
 }

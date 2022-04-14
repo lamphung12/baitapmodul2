@@ -9,15 +9,13 @@ public class Shape {
     public Shape() {
 
     }
-
-    public Shape(String color, boolean filled) {
-    }
-
     // phương thức khởi tạo
-    public void LopShape(String color, boolean filled) {
+    public Shape(String color, boolean filled) {
         this.color = color;
-        this.filled= filled;
+        this.filled = filled;
     }
+
+
 
     //getter và setter cho thuộc tính
     public String getColor() {
